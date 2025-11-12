@@ -24,6 +24,13 @@ const AxiosApi = {
   members: async () => {
     return await axios.get(DOMAIN + "/users/list");
   },
+
+  getboard: async (boardId) => {
+    return await axios.get(DOMAIN + `/api/boards/${boardId}`);
+  },
+  getpost: async (postId) => {
+    return await axios.get(DOMAIN + `/api/posts/${postId}`);
+  },
 };
 
 export default AxiosApi;
