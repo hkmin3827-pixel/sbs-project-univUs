@@ -37,7 +37,7 @@ public class TodoService {
     }
 
     // 2) Id 조회
-    public TodoResDto getTodobyId(Long id) {
+    public TodoResDto getTodoById(Long id) {
         try {
             Todo todo = todoRepository.findById(id)
                     .orElseThrow(() -> new RuntimeException("TodoList가 없습니다!"));

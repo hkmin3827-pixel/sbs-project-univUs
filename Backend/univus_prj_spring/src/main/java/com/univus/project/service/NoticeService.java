@@ -75,7 +75,7 @@ public class NoticeService {
     }
 
     // 5) 최신순 공지 목록 조회
-    List<NoticeResDto> getAllNotices() {
+    public List<NoticeResDto> getAllNotices() {
         try {
             return noticeRepository.findAllByOrderByCreateTimeDesc()
                     .stream()
