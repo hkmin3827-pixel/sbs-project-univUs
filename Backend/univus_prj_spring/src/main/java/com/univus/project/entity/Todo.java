@@ -14,7 +14,8 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="todo_id")
-    private Long id;                    // TodoList 작성자 Id
+    private Long id;                    // 작성자 Id
+    private String email;               // 작성자 이메일
 
     @Column(nullable = false, length = 256)
     private String content;             // TodoList 내용
