@@ -5,11 +5,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Getter
-@Setter
+@Getter @Setter @NoArgsConstructor
 @ToString
-@NoArgsConstructor
-public class BoardCreateDto {
+public class BoardModifyDto {
     private String email;
     private String name;
     private String description;

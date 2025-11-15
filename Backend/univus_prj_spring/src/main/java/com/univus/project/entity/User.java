@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name= "users")
+//@Table(name= "user")
 @Inheritance(strategy = InheritanceType.JOINED)   // 하위 엔티티 분리 테이블 방식 (교수 / 학생)
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
