@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 
 @Getter @Setter @NoArgsConstructor @ToString
 public class NoticeResDto {
-    private Long id;        // 작성자 Id
+    private Long id;        // 공지 Id
     private String title;   // 공지 제목
     private String content; // 공지 내용
     private String name;    // 작성자 이름

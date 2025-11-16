@@ -14,7 +14,7 @@ public class Notice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name= "notice_id")
-    private Long id;                    // 작성자 Id
+    private Long id;                    // Id
     private String email;               // 작성자 이메일
 
     @Column(nullable = false, length = 256)

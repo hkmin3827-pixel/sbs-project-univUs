@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Getter @Setter @NoArgsConstructor @ToString
 public class TodoResDto {
-    private Long id;        // 작성자 id
+    private Long id;        // todolist id
     private String name;    // 작성자 이름
     private String content; // 할일 내용
     private boolean done;   // 완료 여부
